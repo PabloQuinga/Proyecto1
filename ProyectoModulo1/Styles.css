@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex; /* Organiza los elementos en una línea */
+    align-items: center; /* Alinea verticalmente los botones y el texto */
+    justify-content: flex-start; /* Alinea todo a la izquierda */
+    gap: 10px; /* Espacio entre los botones y el texto */
+    padding: 10px;
+    border: 1px solid #343333;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+/** Estilo para el botón de completar */
+button {
+    background-color: #f2bb07; /* Verde */
+    color: white;
+    border: 1px solid #0c0c0c; /* Borde gris claro */
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #abadab; /* Verde más oscuro al pasar el mouse */
+}
+
+.completada {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto en blanco */
+    border: 1px solid #6c6c6c;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Efecto hover */
+.completada:hover {
+    background-color: #45a049; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+/* Estilo opcional para un botón desactivado */
+.completada:disabled {
+    background-color: #ccc; /* Gris claro */
+    cursor: not-allowed; /* Cursor no permitido */
+    color: #666; /* Color del texto gris */
+}
